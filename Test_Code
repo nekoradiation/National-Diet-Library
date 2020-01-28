@@ -1,0 +1,19 @@
+import numpy as np
+
+#JSONファイルからデータを引き出す
+import json
+with open('C:/Users/matsu/Desktop/KOKURITSU_TOSYO/train_annotations/train_829982_0002.json',encoding="utf-8") as f:
+    jsn = json.load(f)
+
+#jsonの中の座標をを一覧にする
+labels = jsn['labels']
+attributes = jsn['attributes']
+print(labels)
+print(attributes)
+
+#numpy配列にしてlabelsの一行目の要素を抽出
+dataMatrix = np.array([list(labels[i].valies()) for i in labels])
+print(dataMatrix)
+
+square = labels[1, :]
+print(square)
