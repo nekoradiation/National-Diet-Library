@@ -1,2 +1,5 @@
 # National-Diet-Library
-SIGNATE Test Model
+SIGNATE Competition
+https://signate.jp/competitions/218
+
+
